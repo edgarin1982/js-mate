@@ -8,6 +8,12 @@ btn.addEventListener('click', precioConDescuento);
 function precioConDescuento() {
     const price = inputPrice.value;
     const discount = inputDiscount.value;
+
+    if (price === '' || discount === '') {
+        pResult.innerText = alert('Por favor llena correctamente los campos')
+        
+    } 
+
     const newPrice = (price * (100 - discount)) /100;
 
     pResult.innerHTML = 'El nuevo precio con descuento es $' + newPrice;
