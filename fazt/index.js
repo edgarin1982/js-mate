@@ -1,4 +1,4 @@
-const students = [
+/* const students = [
     {
       name: "Jill",
       lastname: "Doe",
@@ -29,8 +29,8 @@ const students = [
       age: 20,
       course: "Financial Management",
     },
-  ];
-  
+  ];*/
+
   //foreach
 
   /* for (let index = 0; index < students.length; index++) {
@@ -58,19 +58,36 @@ const students = [
    console.log(fullNames); */
 
    
-  const names = students.map(item => ({
+ /*  const names = students.map(item => ({
     
         //spread operator
         ...item,
         course: 'Programing'
-       /*  name: item.name,
+        name: item.name,
         lastname: item.lastname,
         age: item.age,
-        course: item.course, */
-        //title: `${item.name} - ${item.course}`
-        /* fullname: item.name + ' ' + item.lastname,
+        course: item.course, 
+        title: `${item.name} - ${item.course}`
+        fullname: item.name + ' ' + item.lastname,
         age: item.age,
-        course: item.course */
+        course: item.course 
     
   }));
-  console.log(names); 
+  console.log(names);  */
+
+
+  const products = [
+	{ id: "1", name: "shirt", category: "clothing" },
+	{ id: "2", name: "Sports Tennis", category: "accessories" },
+	{ id: "3", name: "Casual shoes", category: "footwear" },
+	{ id: "4", name: "skirt", category: "clothing" },
+	{ id: "5", name: "tie", category: "clothing" },
+];  
+
+const rta = products.map(item =>{
+    item.tax = 5.5;
+    return item;
+    
+})
+console.log(rta); 
+
